@@ -25,10 +25,22 @@
     box-shadow: 0 7px 10px rgba($color-black, .3),
                 5px 10px 12px rgba($color-black, .2);
     transform: translateY(-3px);
+
+    @media (hover: none) and (pointer: coarse) {
+        box-shadow: 0 5px 5px rgba($color-black, .15),
+        3px 7px 7px rgba($color-black, .1);
+        transform: none;
+    }
 }
 
 .cta:active {
     box-shadow: 0 5px 7px rgba($color-black, .2),
                 4px 8px 10px rgba($color-black, .15);
     transform: translateY(-2px);
+
+    @media (hover: none) and (pointer: coarse) {
+        box-shadow: 0 5px 5px rgba($color-black, .15),
+        3px 7px 7px rgba($color-black, .1);
+        transform: none;
+    }
 }
