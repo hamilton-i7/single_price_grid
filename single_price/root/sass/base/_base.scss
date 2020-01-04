@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width:632px) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width:505px) {
+        font-size: 45%;
+    }
+}
+
+body {
+    @include flexRow(true);
+    @include flexContent($align: center, $justify: center);
+
+    background-color: $color-light-gray;
+    box-sizing: border-box;
+    max-width: 1440px;
+    min-height: 100vh;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 7px 12px rgba($color-black, .2);
+    margin: 5% 0;
+    overflow: hidden;
+    width: 50%;
+
+    @media only screen and (max-width: 1305px) {
+        width: 60%;
+    }
+
+    @media only screen and (max-width: 1085px) {
+        width: 70%;
+    }
+
+    @media only screen and (max-width: 930px) {
+        width: 75%;
+    }
+
+    @media only screen and (max-width: 870px) {
+        width: 80%;
+    }
+
+    @media only screen and (max-width: 815px) {
+        width: 85%;
+    }
+
+    @media only screen and (max-width: 766px) {
+        width: 90%;
+    }
+
+    @media only screen and (max-width: 455px) {
+        width: 70%;
+    }
+}

@@ -1,0 +1,42 @@
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.heading-primary {
+    color: $color-primary;
+    font-size: 2.8rem;
+    margin-bottom: 2.8rem;
+    width: fit-content;
+}
+
+.heading-secondary {
+    color: $color-secondary;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 1.8rem;
+    width: fit-content;
+}
+
+.heading-tertiary {
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize;
+
+    @media only screen and (max-width: 455px) {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.paragraph {
+    color: $color-grayish-blue;
+    display: block;
+    line-height: 1.7;
+
+    @media only screen and (max-width: 455px) {
+        line-height: 2;
+    }
+}

@@ -1,0 +1,64 @@
+.body {
+    @include flexRow(true);
+
+    color: $color-white;
+
+    & > * {
+        padding: 6%;
+
+        // @media only screen and (max-width: 700px) {
+        //     padding: 6%;
+        // }
+    }
+
+    @media only screen and (max-width: 455px) {
+        @include flexRow(false);
+    }
+}
+
+.pricing {
+    background-color: $color-primary;
+    flex-basis: 50%;
+
+    &__plan {
+        color: rgba($color-white, .5);
+        margin-bottom: 1rem;
+
+        & span {
+            color: $color-white;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-right: 1rem;
+        }
+    }
+
+    &__offer {
+        margin-bottom: 3.5rem;
+
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
+}
+
+.benefits {
+    background-color: rgba($color-primary, .6);
+    flex-basis: 50%;
+
+    &__list {
+        list-style: none;
+
+        &-item {
+            color: rgba($color-white, .8);
+            line-height: 1.4;
+
+            &::first-letter{
+                text-transform: capitalize;
+            }
+
+            @media only screen and (max-width: 455px) {
+                line-height: 1.7;
+            }
+        }
+    }
+}
